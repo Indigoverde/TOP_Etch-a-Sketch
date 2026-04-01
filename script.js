@@ -1,10 +1,13 @@
 // Grid
 const container = document.querySelector("#gridContainer");
 
-const div = document.createElement("div");
-div.style.border = "solid blue"
-div.style.minHeight = " 50 px";
-div.style.minWidth = "50px"
-container.appendChild(div);
+const gridSize = 16;
+//const totalCells = gridSize * gridSize;
 
-// voir avec flexbox pour une taille auto
+    for (let i = 1; i < 256; i++) {
+        const cell = document.createElement("div");
+        cell.classList.add("grid-cell");
+        container.appendChild(cell);
+        }   
+    
+// Pb avec le nombre de case à cause des bords

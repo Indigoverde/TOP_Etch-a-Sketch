@@ -1,5 +1,15 @@
 #gridContainer {
     display : flex;
-    height : 400px;
-    width : 400px;
+    flex-wrap : wrap;
+    height : 512px;
+    width : 512px;
+    border : 1px solid black;
+}
+
+.grid-cell {
+   border : 1px solid black;
+   flex : auto;
+   height : auto;
+   width : 32px;
+
 }

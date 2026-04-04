@@ -1,15 +1,19 @@
 #gridContainer {
     display : flex;
     flex-wrap : wrap;
-    height : 512px;
-    width : 512px;
-    border : 1px solid black;
-}
+    height : 528px;
+    width : 528px;
+    border-top : 1px solid black;
+    border-left : 1px solid black;
+    border-bottom : 2px solid black;
+    border-right : 2px solid black;
+ }
 
 .grid-cell {
    border : 1px solid black;
    flex : auto;
    height : auto;
    width : 32px;
-
-}
+   margin-right : -1px;
+   margin-bottom : -1px;
+  }

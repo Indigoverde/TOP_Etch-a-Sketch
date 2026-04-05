@@ -1,13 +1,44 @@
 // Grid
 const container = document.querySelector("#gridContainer");
 
-const gridSize = 16;
-//const totalCells = gridSize * gridSize;
-
-    for (let i = 1; i < 256; i++) {
-        const cell = document.createElement("div");
-        cell.classList.add("grid-cell");
-        container.appendChild(cell);
-        }   
+for (let i = 0; i < 256; i++) {
+    const cell = document.createElement("div");
+    cell.classList.add("grid-cell");
+    container.appendChild(cell);
+    }   
     
-// Pb avec le nombre de case à cause des bords
+// Hover effect
+
+const gridCellArray = Array.from(document.querySelectorAll(".grid-cell"));
+let isDrawing = false;
+
+function coloring(event) {
+    if (isDrawing) {
+        event.target.style.backgroundColor = "black";
+    }
+}
+
+function startDrawing(event) {
+    isDrawing = true;
+    event.target.style.backgroundColor = "black";
+  }
+
+function stopDrawing() {
+    isDrawing = false;
+    }
+
+gridCellArray.forEach((cell) => {
+    cell.addEventListener("mousedown", startDrawing);
+    cell.addEventListener("mouseover", coloring);
+    });
+  
+    document.addEventListener("mouseup", stopDrawing);
+   
+
+  
+ 
+
+
+
+
+

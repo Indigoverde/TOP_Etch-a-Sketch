@@ -1,19 +1,23 @@
+body {
+    background-color: rgb(239, 227, 232);
+}
+
 #gridContainer {
     display : flex;
     flex-wrap : wrap;
     height : 528px;
     width : 528px;
-    border-top : 1px solid black;
-    border-left : 1px solid black;
-    border-bottom : 2px solid black;
-    border-right : 2px solid black;
  }
 
 .grid-cell {
-   border : 1px solid black;
+   border : 1px solid rgb(208, 129, 151);
    flex : auto;
    height : auto;
    width : 32px;
    margin-right : -1px;
    margin-bottom : -1px;
   }
+
+.grid-cell-color {
+    background-color: black;
+}

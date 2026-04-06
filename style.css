@@ -11,13 +11,14 @@ body {
 
 .grid-cell {
    border : 1px solid rgb(208, 129, 151);
-   flex : auto;
-   height : auto;
-   width : 32px;
+   flex : 1 1 auto;
    margin-right : -1px;
    margin-bottom : -1px;
   }
 
-.grid-cell-color {
-    background-color: black;
+#btn-container {
+    margin-top : 50px;
+    margin-bottom : 20px; 
+    
+
 }

@@ -10,18 +10,25 @@ for (let i = 0; i < 256; i++) {
 
 // Hover effect
 
+
 let gridCellArray = Array.from(document.querySelectorAll(".grid-cell"));
 let isDrawing = false;
 
 function coloring(event) {
     if (isDrawing) {
-        event.target.style.backgroundColor = "black";
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        event.target.style.backgroundColor = `rgb(${r}, ${g}, ${b}`;
     }
 }
 
 function startDrawing(event) {
     isDrawing = true;
-    event.target.style.backgroundColor = "black";
+    const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        event.target.style.backgroundColor = `rgb(${r}, ${g}, ${b}`;
 }
 
 function stopDrawing() {

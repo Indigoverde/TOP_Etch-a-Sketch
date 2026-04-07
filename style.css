@@ -7,6 +7,7 @@ body {
     flex-wrap : wrap;
     height : 528px;
     width : 528px;
+    margin-left : 50px;
  }
 
 .grid-cell {
@@ -18,7 +19,6 @@ body {
 
 #btn-container {
     margin-top : 50px;
-    margin-bottom : 20px; 
-    
-
-}
+    margin-bottom : 20px;
+    margin-left : 50px;
+    }
